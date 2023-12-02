@@ -4,6 +4,19 @@ body{
   padding: 0px;
 }
 
+@media only screen and(max-width: 600px) {
+  .background-container {
+    position: fixed;
+    background-image: url('computer-desk-coffe.jpg');
+    background-size: 100% 100%;
+    filter: brightness(0.3);
+    z-index: -10;
+    width: 100%;
+    
+  }
+
+}
+
 .background-container {
   position: fixed;
   background-image: url('computer-desk-coffe.jpg');
