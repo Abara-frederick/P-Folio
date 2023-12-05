@@ -4,61 +4,52 @@ body{
   padding: 0px;
 }
 
-@media only screen and(max-width: 600px) {
+@media only screen and (max-width: 600px){
+
   .background-container {
     position: fixed;
-    background-image: url('computer-desk-coffe.jpg');
-    background-size: 100% 100%;
+    background-image: url('computer-desk-coffe-potrate.jpg');
+    background-size: cover;
     filter: brightness(0.3);
     z-index: -10;
     width: 100%;
-    
+    height: 950px;
   }
-
-}
-
-.background-container {
-  position: fixed;
-  background-image: url('computer-desk-coffe.jpg');
-  background-size: cover;
-  filter: brightness(0.3);
-  z-index: -10;
-  width: 100%;
-  height: 950px;
-
-
-}
-
+  
   .background-container-before{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
-
-
   }
-header{
-  display: flex;
-  background-color: rgb(71, 71, 156);
-  color: white;
-  margin-top: 0px;
-  padding: none;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  text-align: center;
 
-}
+  header{
+    display: inline-block;
+    background-color: rgb(71, 71, 156);
+    color: white;
+    margin-top: 0px;
+    padding: none;
+    height: 190px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  
+  }
 
-.header-left{
+  .header-left{
     width: 10%;
+    display: none;
 }
 
 .header-fill{
-    width: 70%;
+    width: 100%;
+}
+
+.header-right{
+  display: none;
 }
 
 ul.navv {
@@ -70,7 +61,7 @@ ul.navv {
 }
 
   ul.navv li {
-    float: left;
+    /* float: left; */
     margin: none;
     font-size: 25px;
     cursor: pointer;
@@ -79,114 +70,297 @@ ul.navv {
   
   ul.navv li a {
     display: block;
+    align-content: start;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   ul.navv li a:hover {
-    background-color:  rgb(57, 57, 115);
-    color: white
+    background-color:  rgb(83, 83, 155);
+    color: white;
+    border: 2px solid white;
+    
   }
 
-.header-left{
-  width: 20%;
-  display: flex;
-  float: right;
-  font-size: 22px;
+
+  .page-section{
+    /* position: fixed; */
+    color: white;
+    z-index: -1;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .page-div{    
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    height: 950px;
+    justify-content: center;
+    padding-top: 15%;
+      
+  }
+
+  h1{
+    color: white; 
+    font-size: 70px;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 18px;
+    font-weight: 100;
+      
+  }
+
+  .btnDiv{
+    align-items: center;
+    min-width: 350px;
+  }
+  
+  .websiteBtn{
+    background-color: rgb(71, 71, 156) ;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    height: 60px;
+    width: 70%;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', serif;
+    margin-bottom: 10px;
+  }
+  
+  .websiteBtn:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .hireBtn{
+    background-color: rgb(94, 94, 95) ;
+    height: 60px;
+    width: 70%;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+    font-family: 'Roboto', serif;
+    font-size: 25px;
+  }
+  
+  .hireBtn:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .card{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: #d5d5d5;
+    z-index: -1;
+    margin-bottom: 4%;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  ul.dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(71, 71, 156);
+  }
+  
+  li:hover ul.dropdown {
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: 0px;
+    width: 170px;
+    background-color: rgb(109, 109, 110);
+    z-index: 30;
+  }
 }
 
-.page-section{
-  position: fixed;
-  color: white;
-  z-index: -1;
-  width: 100%;
-}
+@media only screen and (min-width: 600px){
 
-.page-div{    
-  padding-left: 10%;
-  padding-right: 20%;
-  align-items: center;
-  height: 950px;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15%;
+  .background-container {
+    position: fixed;
+    background-image: url('computer-desk-coffe.jpg');
+    background-size: cover;
+    filter: brightness(0.3);
+    z-index: -10;
+    width: 100%;
+    height: 950px;
+  }
+  
+    .background-container-before{
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+
+    }
+  header{
+    display: flex;
+    background-color: rgb(71, 71, 156);
+    color: white;
+    margin-top: 0px;
+    padding: none;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    text-align: center;
+  
+  }
+  
+  .header-left{
+      width: 10%;
+  }
+  
+  .header-fill{
+      width: 70%;
+  }
+  
+  ul.navv {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      
+  }
+  
+    ul.navv li {
+      float: left;
+      margin: none;
+      font-size: 25px;
+      cursor: pointer;
+    } 
+  
     
-}
-
-h1{
-  color: white; 
-  font-size: 70px;
-}
-
-p{
-  font-size: 20px;
-  font-weight: lighter;
-    
-}
-
-.websiteBtn{
-  background-color: rgb(71, 71, 156) ;
-  height: 50px;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 5px;
-  height: 60px;
-  color: white;
-  font-size: 25px;
-  font-family: 'Roboto', serif;
-  margin-right: 10px;
-}
-
-.websiteBtn:hover{
-  border: 3px solid white;
-  color: white;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.hireBtn{
-  background-color: rgb(94, 94, 95) ;
-  height: 50px;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 5px;
-  height: 60px;
-  color: white;
-  font-family: 'Roboto', serif;
-  font-size: 25px;
-}
-
-.hireBtn:hover{
-  border: 3px solid white;
-  color: white;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.card{
-  height: 400px;
-  width: 400px;
-  background-color: white;
-  box-shadow: #d5d5d5;
-  z-index: -1;
-  margin-bottom: 4%;
-  cursor: pointer;
-}
-
-ul.dropdown {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: rgb(71, 71, 156);
-}
-
-li:hover ul.dropdown {
-  display: block;
-  position: absolute;
-  width: 170px;
-  background-color: rgb(71, 71, 156);
-  z-index: 30;
+    ul.navv li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    ul.navv li a:hover {
+      background-color:  rgb(57, 57, 115);
+      color: white
+    }
+  
+  .header-left{
+    width: 20%;
+    display: flex;
+    float: right;
+    font-size: 22px;
+  }
+  
+  .page-section{
+    position: fixed;
+    color: white;
+    z-index: -1;
+    width: 100%;
+  }
+  
+  .page-div{    
+    padding-left: 10%;
+    padding-right: 20%;
+    align-items: center;
+    height: 950px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+      
+  }
+  
+  h1{
+    color: white; 
+    font-size: 70px;
+  }
+  
+  p{
+    font-size: 20px;
+    font-weight: lighter;
+      
+  }
+  
+  .websiteBtn{
+    background-color: rgb(71, 71, 156) ;
+    height: 50px;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', serif;
+    margin-right: 10px;
+  }
+  
+  .websiteBtn:hover{
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .hireBtn{
+    background-color: rgb(94, 94, 95) ;
+    height: 50px;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+    font-family: 'Roboto', serif;
+    font-size: 25px;
+  }
+  
+  .hireBtn:hover{
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .card{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    box-shadow: #d5d5d5;
+    z-index: -1;
+    margin-bottom: 4%;
+    cursor: pointer;
+  }
+  
+  ul.dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(71, 71, 156);
+  }
+  
+  li:hover ul.dropdown {
+    display: block;
+    position: absolute;
+    width: 170px;
+    background-color: rgb(71, 71, 156);
+    z-index: 30;
+  }
+  
 }
